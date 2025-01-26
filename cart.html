@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- القائمة اليمنى -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">رجال</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">نساء</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">أطفال</a>
+                </li>
+            </ul>
+
+            <!-- الشعار في المنتصف -->
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- الأيقونات -->
+            <div class="d-flex icons">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-cart"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-search"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-person"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 mt-5 mb-4">
+                <h2>سلة التسوق</h2>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <!-- Cart Items Section -->
+            <div class="col-md-8">
+                <div class="row  mb-4">
+                    <div class="col-2 mt-4">
+                        <img src="images/damer.jpg" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="col-5 mt-4">
+                        <p>الدامر الاردني التقليدي المصنوع من الجوخ</p>
+                    </div>
+                    <div class="col-2 mt-4">
+                        <p>السعر: <del>60 دينار</del> <span class="text-danger">45 دينار</span></p>
+                    </div>
+                    <div class="col-1 mt-4">
+                        <p>المقاس S</p>
+                        <p>الكمية 1</p>
+                        <p>تغيير</p>
+                    </div>
+                    <div class="col-2 text-center mt-2">
+                        <button class="btn btn-sm remove-item-btn">×</button>
+                    </div>
+                </div>
+
+                <!-- <div class="text-center">
+                    <button class="btn btn-outline-secondary btn-sm">اضافة الى المفضلة ❤️</button>
+                </div> -->
+            </div>
+            <!-- Summary Section -->
+            <div class="col-md-4">
+                <div class="cart-summary">
+                    <p><span>السعر:</span> <span>60 دينار</span></p>
+                    <p><span>التوصيل:</span> <span>5 دينار</span></p>
+                    <p><span>التخفيضات:</span> <span>15 دينار</span></p>
+                    <hr>
+                    <p><strong><span>الإجمالي:</span> <span>50 دينار</span></strong></p>
+                    <button class="btn btn-dark w-100">التوجه الى الدفع</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتجات ذات الصلة -->
+        <div class="d-flex justify-content-between align-items-center mb-4 related-products-section">
+            <h4 class="mb-0">قد يعجبك أيضاً</h4>
+            <div>
+                <button class="btn btn-outline-secondary btn-sm me-2" type="button"
+                    data-bs-target="#relatedProductsCarousel" data-bs-slide="prev">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-target="#relatedProductsCarousel"
+                    data-bs-slide="next">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="relatedProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card text-center p-3">
+                                <img src="images/damer.jpg" class="card-img-top mb-3" alt="Product 2">
+                                <h6 class="card-title">الدامر الأردني التقليدي</h6>
+                                <p class="card-text text-muted">63 دينار</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary btn-sm flex-grow-1 me-2">
+                                        <i class="bi bi-cart"></i> أضف الى للسلة
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center p-3">
+                                <img src="images/jobba.jpg" class="card-img-top mb-3" alt="Product 2">
+                                <h6 class="card-title">الجبّة الاردنية التقليدية مصنوعة من.. </h6>
+                                <p class="card-text text-muted">63 دينار</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary btn-sm flex-grow-1 me-2">
+                                        <i class="bi bi-cart"></i> أضف الى للسلة
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center p-3">
+                                <img src="images/damer.jpg" class="card-img-top mb-3" alt="Product 3">
+                                <h6 class="card-title">الدامر التقليدي</h6>
+                                <p class="card-text text-muted">60 دينار</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary btn-sm flex-grow-1 me-2">
+                                        <i class="bi bi-cart"></i> أضف الى السلة
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center p-3">
+                                <img src="images/jokha.jpg" class="card-img-top mb-3" alt="Product 4">
+                                <h6 class="card-title">الجوخة التقليدية الاردنية مصنوعة من ..</h6>
+                                <p class="card-text text-muted">60 دينار</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary btn-sm flex-grow-1 me-2">
+                                        <i class="bi bi-cart"></i> أضف الى السلة
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- يمكنك إضافة منتجات إضافية هنا -->
+                        <div class="col-md-3">
+                            <div class="card text-center p-3">
+                                <img src="images/damer.jpg" class="card-img-top mb-3" alt="Product 2">
+                                <h6 class="card-title">القميص الأردني التقليدي</h6>
+                                <p class="card-text text-muted">63 دينار</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary btn-sm flex-grow-1 me-2">
+                                        <i class="bi bi-cart"></i> أضف الى للسلة
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top-container">
+        <a href="#top" class="back-to-top mt-5">العودة إلى أعلى ↑</a>
+    </div>
+    <footer class="footer mt-5">
+        <div class="footer-main container">
+            <div class="row">
+                <!-- القسم الأول: معلومات الشركة -->
+                <div class="col-md-4">
+                    <h6>أثوابنا</h6>
+                    <p>
+                        نقدم لكم أزياء شعبية تعزز ارتباطنا بثقافتنا الشعبية
+                        وتحافظ على الفلكلور والعروض الثقافية في الأردن.
+                    </p>
+                </div>
+
+                <!-- القسم الثاني: الروابط -->
+                <div class="col-md-4">
+                    <h6>روابط تهمك</h6>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <!-- القسم الثالث: خدمة العملاء -->
+                <div class="col-md-4">
+                    <h6>خدمة العملاء</h6>
+                    <div class="contact-options">
+                        <a href="#"><i class="bi bi-phone"></i> جوال</a>
+                        <a href="#"><i class="bi bi-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <h6>تابع أثوابنا</h6>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-snapchat"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="payments">
+                <img src="https://lh3.googleusercontent.com/KE8W2U_931n24DtWrvySEdKwnx6dLeaoaXBV6nXNHKbJd32mnIx-eaxXPdsRscJMT8vxyLy59XKVkr_UXlswXFJ2KjomzkqV-ud3=s0"
+                    alt="Google Pay">
+                <img src="https://images.seeklogo.com/logo-png/30/2/apple-pay-payment-mark-logo-png_seeklogo-306167.png"
+                    alt="Apple Pay">
+                <img src="Visa.png" alt="Visa">
+                <img src="mada.png" alt="Mada">
+            </div>
+            <p>© جميع الحقوق محفوظة | أثوابنا 2025</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

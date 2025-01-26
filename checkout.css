@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF7F2;
+    font-family: '29LT Bukra';
+}
+
+/* تنسيق الـ Navbar */
+.navbar {
+    background-color: #2B2B2B;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar .navbar-brand img {
+    width: 180px;
+    margin-left: 140px;
+}
+
+.navbar .icons {
+    gap: 15px;
+}
+
+.navbar .icons .nav-link i {
+    color: #fff;
+    /* تغيير لون الأيقونات إلى الأبيض */
+}
+
+.navbar .icons .nav-link i:hover {
+    color: #ddd;
+    /* تغيير اللون عند التمرير */
+}
+.custom-color {
+    background-color: #CEBEB3;
+}
+.container-check  {
+    width: 64%;
+}
+/* .order-summary-section {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+} */
+
+.order-summary-section .form-control {
+    border-radius: 5px; /* زوايا مستديرة للحقل */
+}
+
+.order-summary-section .btn-secondary {
+    color: #2B2B2B;
+    /* background-color: #c8a886; */
+    border: none;
+}
+.order-summary-section .btn-secondary:hover {  
+    background-color: #d8cbc2;
+    border: none;
+}
+.order-summary-section .btn-outline-secondary {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    color: #2B2B2B;
+    font-size: 12px;
+}
+
+.order-summary-section .btn-outline-secondary:hover {
+    background-color: #f7f7f7;
+}
+.bi-chevron-down {
+    padding-left: 8px;
+}
+.info-container {
+    background-color: rgb(255, 255, 255);
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#confirm-location:hover {
+    background-color: #d8cbc2;
+}
+#confirm-delivary:hover {
+    background-color: #d8cbc2;
+}
+#confirm-check:hover {
+background-color: #d8cbc2;
+}
+.payment-icons img {
+    height: 30px;
+    margin-right: 10px;
+}
+/* تنسيق الفوتر */
+.footer {
+    background-color: #2B2B2B;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer-top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
+/* القسم العلوي */
+.footer-top {
+    text-align: center;
+    padding: 10px;
+    background-color: #F8EDE8;
+    color: #333;
+    font-weight: bold;
+}
+
+/* القسم الرئيسي */
+.footer-main {
+    padding: 30px 15px;
+}
+
+.footer-main .row > div {
+    margin-bottom: 20px;
+}
+
+.footer-main h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-main p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footer-main ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-main ul li {
+    margin-bottom: 10px;
+}
+
+.footer-main ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-options a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* القسم السفلي */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 15px;
+    border-top: 1px solid #444;
+    margin-top: 20px; /* لإضافة مسافة بين القسم الرئيسي للفوتر والـ footer-bottom */
+}
+.footer-bottom .social-media a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer-bottom .social-media a:hover {
+    color: #ddd;
+}
+
+.footer-bottom .payments img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+

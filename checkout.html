@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الدفع</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- القائمة اليمنى -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">رجال</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">نساء</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">أطفال</a>
+                </li>
+            </ul>
+
+            <!-- الشعار في المنتصف -->
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- الأيقونات -->
+            <div class="d-flex icons">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-cart"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-search"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-person"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-check mx-auto py-5">
+        <!-- Header Section -->
+        <div class="card p-3 mb-4">
+            <div class="d-flex align-items-center">
+                <div class="me-3">
+                    <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle">
+                </div>
+                <div>
+                    <p class="mb-0">مرحبًا بك، مصطفى عبدات</p>
+                    <small>أثوابنا / سلة التسوق /انهاء الطلب</small>
+                </div>
+            </div>
+            <hr>
+        <!-- Order Summary -->
+        <div class="order-summary-section p-4 mb-4 rounded">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold">إجمالي الطلب</h5>
+                <span class="fs-4 fw-bold">50 د.أ</span>
+            </div>
+            <p class="text-danger small">لديك كوبون تخفيض؟</p>
+            <div class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="ادخل رمز الكوبون">
+                <button class="btn btn-secondary custom-color">تطبيق</button>
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-outline-secondary"><i class="bi bi-chevron-down"></i>تفاصيل الفاتورة </button>
+            </div>
+        </div>
+    </div>
+        
+
+        <!-- Address Section -->
+         <div class="info-container">
+        <div class="card p-4 mb-4">
+            <h5 class="section-header">1. عنوان التوصيل</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="city" class="form-label">المدينة</label>
+                    <select id="city" class="form-select">
+                        <option selected>اختر المدينة</option>
+                        <option value="1">عمان</option>
+                        <option value="2">الزرقاء</option>
+                        <option value="3">إربد</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">العنوان</label>
+                    <input type="text" id="address" class="form-control" placeholder="أدخل العنوان بالتفصيل">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="saveAddress">
+                    <label class="form-check-label" for="saveAddress">
+                        حفظ هذا العنوان للتوصيل في المستقبل
+                    </label>
+                </div>
+                <button type="button" class="btn mt-3 custom-color" id="confirm-location">تأكيد العنوان</button>
+            </form>
+        </div>
+
+        <!-- Shipping Method Section -->
+        <div class="card p-4 mb-4">
+            <h5 class="section-header">2. شركة الشحن</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="shipping" id="aramex" checked>
+                <label class="form-check-label" for="aramex">
+                    أرامكس (5 دينار - تسليم خلال يومين)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="shipping" id="local">
+                <label class="form-check-label" for="local">
+                    شركة محلية (3 دينار - تسليم خلال 3-5 أيام)
+                </label>
+            </div>
+            <button type="button" class="btn mt-3 custom-color" id="confirm-delivary">تأكيد شركة الشحن</button>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="card p-4">
+            <h5 class="section-header">3. طريقة الدفع</h5>
+            <div class="payment-icons mb-3">
+                <img src="https://via.placeholder.com/50x30" alt="MasterCard">
+                <img src="images/Visa.png" alt="Visa">
+                <img src="images/mada.png" alt="Mada">
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">رقم البطاقة</label>
+                    <input type="text" id="cardNumber" class="form-control" placeholder="أدخل رقم البطاقة">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="expiryDate" class="form-label">تاريخ الانتهاء</label>
+                            <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="cvc" class="form-label">رمز التحقق (CVC)</label>
+                            <input type="text" id="cvc" class="form-control" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn w-100 custom-color" id="confirm-check">إكمال الدفع</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer class="footer mt-5">
+        <div class="footer-main container">
+            <div class="row">
+                <!-- القسم الأول: معلومات الشركة -->
+                <div class="col-md-4">
+                    <h6>أثوابنا</h6>
+                    <p>
+                        نقدم لكم أزياء شعبية اعتزازاً بثقافتنا الشعبية
+                        وحفاظاً على الفلكلور و الموروث الثقافي في
+                        الاردن.
+                    </p>
+                </div>
+
+                <!-- القسم الثاني: الروابط -->
+                <div class="col-md-4">
+                    <h6>روابط تهمك</h6>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <!-- القسم الثالث: خدمة العملاء -->
+                <div class="col-md-4">
+                    <h6>خدمة العملاء</h6>
+                    <div class="contact-options">
+                        <a href="#"><i class="bi bi-phone"></i> جوال</a>
+                        <a href="#"><i class="bi bi-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <h6>تابع أثوابنا</h6>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-snapchat"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="payments">
+                <img src="https://lh3.googleusercontent.com/KE8W2U_931n24DtWrvySEdKwnx6dLeaoaXBV6nXNHKbJd32mnIx-eaxXPdsRscJMT8vxyLy59XKVkr_UXlswXFJ2KjomzkqV-ud3=s0"
+                    alt="Google Pay">
+                <img src="https://images.seeklogo.com/logo-png/30/2/apple-pay-payment-mark-logo-png_seeklogo-306167.png"
+                    alt="Apple Pay">
+                <img src="images/Visa.png" alt="Visa">
+                <img src="images/mada.png" alt="Mada">
+            </div>
+            <p>© جميع الحقوق محفوظة | أثوابنا 2025</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
