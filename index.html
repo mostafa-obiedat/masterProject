@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container">
+        <!-- القائمة اليمنى (تظهر عند التمرير للأسفل فقط) -->
+        <ul class="navbar-nav me-auto nav-links">
+            <li class="nav-item">
+                <a class="nav-link" href="men.html" >رجال</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="woman.html">نساء</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kids.html">أطفال</a>
+            </li>
+        </ul>
+
+        <!-- الشعار في المنتصف -->
+        <a class="navbar-b " href="index.html">
+            <img src="images/footer_logo.png"  alt="شعار أثوابنا"  class="footer-logo">
+        </a>
+
+        <!-- الأيقونات -->
+        <div class="d-flex icons">
+            <a href="?lang=en" class="nav-link"><i class="bi bi-globe"></i></a>
+            <a href="profile.html" class="nav-link"><i class="bi bi-person"></i></a>
+            <a href="#" class="nav-link"><i class="bi bi-search"></i></a>
+            <a href="./cart.html" class="nav-link"><i class="bi bi-cart"></i></a>
+        </div>
+    </div>
+</nav>
+    <section class="hero text-center text-white py-5">
+        <div class="container-hero">
+            <h1 class="mt-5 display-4">أهلا بك في متجرنا</h1>
+            <br>
+            <br>
+            <h1>اكتشف جمال الزي التراثي الاردني مع منتجاتنا الفريدة</h1>
+            <br>
+            <a href="#clothing-section" class="cta-button-hero">تسوق الآن</a>
+        </div>
+    </section>
+
+    <img src="images/line.jpg" class="line w-100" alt="زخرفة تراثية">
+    <div class="custom-carousel-wrapper">
+        <div class="container carousel-margin">
+            <div class="card text-center p-4 shadow-lg rounded-4 custom-carousel-card">
+                <!-- الكاروسيل -->
+                <div id="workshopCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="caption-above">
+                                <h3 class="animated-title">ورشاتنا</h3>
+                                <p class="animated-subtitle">اكتشف خبرات فريدة وتعلم مهارات جديدة في ورشاتنا المميزة!
+                                </p>
+                            </div>
+                            <img src="images/warshatna.png" class="d-block mx-auto rounded-3 carousel-image"
+                                alt="ورشة التطريز">
+                            <div class="button-below">
+                                <a href="workshop.html" class="btn custom-btn">سجل الآن</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="caption-above">
+                                <h3 class="animated-title">آخر العروض</h3>
+                                <p class="animated-subtitle">اكتشف أفضل العروض والتخفيضات لدينا الآن!</p>
+                            </div>
+                            <img src="images/ourOffers.png" class="d-block mx-auto rounded-3 carousel-image"
+                                alt="آخر العروض">
+                            <div class="button-below">
+                                <a href="#" class="btn custom-btn">عرض العروض</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="caption-above">
+                                <h3 class="animated-title">من نحن</h3>
+                                <p class="animated-subtitle">تعرف على رسالتنا وقيمنا وهدفنا في خدمة المجتمع!</p>
+                            </div>
+                            <img src="images/ourTeam.png" class="d-block mx-auto rounded-3 carousel-image" alt="من نحن">
+                            <div class="button-below">
+                                <a href="about.html" class="btn custom-btn">تعرف علينا</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- أزرار التنقل -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#workshopCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#workshopCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="section-title-wrapper">
+            <div class="section-title" id="clothing-section">منتجاتنا
+                <p class="section-description">تصفح مجموعتنا المميزة من الملابس التراثية</p>
+            </div>
+        </div>
+        <div class="grid-container mt-5">
+            <!-- الرجال -->
+            <div class="men-card">
+                <div class="category-card upgraded-card">
+                    <img src="images/men1.jpeg" alt="رجال" class="img-fluid">
+                    <h5 class="mt-2">رجال</h5>
+                </div>
+            </div>
+            <div class="men-text-container">
+                <div class="text-card upgraded-text-card">
+                    <p>تشكيلة واسعة من الأزياء الرجالية تعكس الأصالة والفخامة</p>
+                    <a href="men.html" class="cta-button">تسوق الآن</a>
+                </div>
+            </div>
+
+            <!-- النساء -->
+            <div class="women-text-container">
+                <div class="text-card upgraded-text-card">
+                    <p>اكتشفي أروع التصاميم النسائية المطرزة يدويًا بلمسة تراثية</p>
+                    <a href="woman.html" class="cta-button">اكتشفي المزيد</a>
+                </div>
+            </div>
+            <div class="women-card">
+                <div class="category-card upgraded-card">
+                    <img src="images/woman.webp" alt="نساء" class="img-fluid">
+                    <h5 class="mt-2">نساء</h5>
+                </div>
+            </div>
+
+            <!-- الأطفال -->
+            <div class="kids-card">
+                <div class="category-card upgraded-card">
+                    <img src="images/faisel.jpg" alt="أطفال" class="img-fluid">
+                    <h5 class="mt-2">أطفال</h5>
+                </div>
+            </div>
+            <div class="kids-text-container">
+                <div class="text-card upgraded-text-card">
+                    <p>ملابس أطفال أنيقة تجمع بين الراحة والأناقة بلمسات شعبية</p>
+                    <a href="kids.html" class="cta-button">تسوق الآن</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- قسم الإكسسوارات -->
+        <div class="section-title-wrapper">
+            <div class="section-title mt-5 mb-1">قسم الإكسسوارات
+                <p class="section-description">أضف لمسة تراثية أنيقة مع تشكيلتنا المتنوعة من الإكسسوارات</p>
+            </div>
+        </div>
+        <div class="row text-center flex-card">
+            <div class="col-6 col-md-6 mb-4">
+                <div class="category-card custom-width">
+                    <img src="images/ex1.jpg" alt="كوفية وعقال" class="img-fluid">
+                    <h5 class="mt-2">كوفية وعقال</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 mb-4">
+                <div class="category-card custom-width">
+                    <img src="images/أسماء_ملابس_تراثية_أردنية.jpg" alt="عبايات وشيلان" class="img-fluid">
+                    <h5 class="mt-2">حلي و قلائد</h5>
+                </div>
+            </div>
+        </div>
+        <!-- قسم الميزات -->
+        <div class="features-section mx-auto">
+            <h1>نوفر لكم من مزايا</h1>
+            <div class="d-flex justify-content-center flex-wrap">
+                <div class="feature">
+                    <img src="images/saving-money.png" alt="توصيل سريع">
+                    <p>اسعار تنافسية</p>
+                </div>
+                <div class="features">
+                    <img src="images/credit-card.png" alt="خدمة عملاء">
+                    <p>طرق دفع متعددة</p>
+                </div>
+                <div class="feature">
+                    <img src="images/customer-service.png" alt="طرق دفع متعددة">
+                    <p>خدمة عملاء</p>
+                </div>
+                <div class="features">
+                    <img src="images/fast-delivery.png" alt="أسعار تنافسية">
+                    <p>توصيل سريع</p>
+                </div>
+            </div>
+            <!-- <div class="divider"></div> -->
+        </div>
+        <img src="images/line.jpg" class="line w-100 linee" alt="زخرفة تراثية">
+        <div class="container testimonial-section ">
+            <h5 class="fw-bold mt-4 mb-4 mx-5">قالوا عن أثوابنا</h5>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center">
+                                <img src="images/profileuser.jpg" class="testimonial-img" alt="User 1">
+                                <p class="stars">★★★★★</p>
+                                <p>متجر ممتاز في جميع الأشياء الشعبية الجميلة، تعامله راقي وصاحبه قمة الأخلاق، الله
+                                    يبارك له في حلاله.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center">
+                                <img src="images/profileuser.jpg" class="testimonial-img" alt="User 2">
+                                <p class="stars">★★★★★</p>
+                                <p>جرات... وكاسات إضافية بصراحة جودتها ممتازة والقواعد طريقتها حلوة. تستحق الدعم
+                                    والتشويق.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center">
+                                <img src="images/profileuser.jpg" class="testimonial-img" alt="User 3">
+                                <p class="stars">★★★★★</p>
+                                <p>ما شاء الله، ممتاز.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-top-container">
+        <a href="#top" class="back-to-top">العودة إلى أعلى ↑</a>
+    </div>
+    <footer class="footer mt-5">
+        <div class="footer-main container">
+            <div class="row">
+                <!-- القسم الأول: معلومات الشركة -->
+                <div class="col-md-4">
+                    <img src="images/footer_logo.png" alt="شعار أثوابنا" class="footer-logo">
+                    <p>
+                        نقدم لكم أزياء شعبية تعزز ارتباطنا بثقافتنا الشعبية
+                        وتحافظ على الفلكلور والعروض الثقافية في الأردن.
+                    </p>
+                </div>
+
+                <!-- القسم الثاني: الروابط -->
+                <div class="col-md-4">
+                    <h6 class="mb-3">روابط تهمك</h6>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <!-- القسم الثالث: خدمة العملاء -->
+                <div class="col-md-4">
+                    <h6 class="mb-3">خدمة العملاء</h6>
+                    <div class="contact-options">
+                        <a href="#"><i class="bi bi-phone"></i> جوال</a>
+                        <a href="#"><i class="bi bi-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <h6>تابع أثوابنا</h6>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-snapchat"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="payments">
+                <img src="https://lh3.googleusercontent.com/KE8W2U_931n24DtWrvySEdKwnx6dLeaoaXBV6nXNHKbJd32mnIx-eaxXPdsRscJMT8vxyLy59XKVkr_UXlswXFJ2KjomzkqV-ud3=s0"
+                    alt="Google Pay">
+                <img src="https://images.seeklogo.com/logo-png/30/2/apple-pay-payment-mark-logo-png_seeklogo-306167.png"
+                    alt="Apple Pay">
+                <img src="images/Visa.png" alt="Visa">
+                <img src="images/mada.png" alt="Mada">
+            </div>
+            <p>© جميع الحقوق محفوظة | 2025 أثوابنا </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

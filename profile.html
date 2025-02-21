@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>الملف الشخصي</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="profile.css">
+    </head>
+    
+    <body>
+          <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- القائمة اليمنى -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="men.html">رجال</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="woman.html">نساء</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kids.html">أطفال</a>
+                </li>
+            </ul>
+
+            <!-- الشعار في المنتصف -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- الأيقونات -->
+            <div class="d-flex icons">
+                <a href="?lang=en" class="nav-link">
+                    <i class="bi bi-globe"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-search"></i>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-cart"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header text-center p-4">
+            <img src="images/profileuser.jpg" alt="User Profile Picture" class="rounded-circle" width="150" height="150">
+            <h4 id="header-name" class="mt-3 text-primary"></h4>
+        </div>
+    
+        <!-- Personal Information -->
+        <div class="profile-content mt-4 mx-4">
+            <h5 class="text-secondary">المعلومات الشخصية</h5>
+            <form>
+                <div class="mb-3 mt-3">
+                    <label for="fullName" class="form-label">الاسم الكامل:</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="الاسم الكامل" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">الايميل:</label>
+                    <input type="email" class="form-control" id="email" placeholder="الايميل" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">رقم التلفون:</label>
+                    <input type="text" class="form-control" id="phone" placeholder="رقم التلفون" disabled>
+                </div>
+            </form>
+    
+            <!-- Account Settings -->
+            <h5 class="mt-5 mb-3 text-secondary">اعدادات الحساب</h5>
+            <button class="btn btn-custom me-2" data-bs-toggle="modal" data-bs-target="#editModal">تعديل الملف الشخصي</button>
+        </div>
+    </div>
+    
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">تعديل الملف الشخصي</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="editFullName" class="form-label">الاسم الكامل:</label>
+                            <input type="text" class="form-control" id="editFullName" placeholder="الاسم الكامل">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="editPhone" class="form-label">رقم التلفون:</label>
+                            <input type="text" class="form-control" id="editPhone" placeholder="رقم التلفون">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">خروج</button>
+                    <button type="button" id="save" class="btn btn-custom">حفظ التعديلات</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-5">
+        <div class="footer-main container">
+            <div class="row">
+                <!-- القسم الأول: معلومات الشركة -->
+                <div class="col-md-4">
+                    <img src="images/footer_logo.png" alt="شعار أثوابنا" class="footer-logo">
+                    <p>
+                        نقدم لكم أزياء شعبية تعزز ارتباطنا بثقافتنا الشعبية
+                        وتحافظ على الفلكلور والعروض الثقافية في الأردن.
+                    </p>
+                </div>
+
+                <!-- القسم الثاني: الروابط -->
+                <div class="col-md-4">
+                    <h6 class="mb-3">روابط تهمك</h6>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <!-- القسم الثالث: خدمة العملاء -->
+                <div class="col-md-4">
+                    <h6 class="mb-3">خدمة العملاء</h6>
+                    <div class="contact-options">
+                        <a href="#"><i class="bi bi-phone"></i> جوال</a>
+                        <a href="#"><i class="bi bi-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <h6>تابع أثوابنا</h6>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-snapchat"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="payments">
+                <img src="https://lh3.googleusercontent.com/KE8W2U_931n24DtWrvySEdKwnx6dLeaoaXBV6nXNHKbJd32mnIx-eaxXPdsRscJMT8vxyLy59XKVkr_UXlswXFJ2KjomzkqV-ud3=s0"
+                    alt="Google Pay">
+                <img src="https://images.seeklogo.com/logo-png/30/2/apple-pay-payment-mark-logo-png_seeklogo-306167.png"
+                    alt="Apple Pay">
+                <img src="images/Visa.png" alt="Visa">
+                <img src="images/mada.png" alt="Mada">
+            </div>
+            <p>© جميع الحقوق محفوظة | 2025 أثوابنا </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -40,70 +40,28 @@ body {
     color: #ddd;
     /* تغيير اللون عند التمرير */
 }
-.custom-color {
-    background-color: #CEBEB3;
-}
-.container-check  {
-    width: 64%;
-}
-/* .order-summary-section {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-} */
-
-.order-summary-section .form-control {
-    border-radius: 5px; /* زوايا مستديرة للحقل */
+/* تنسيق زر العودة إلى أعلى */
+.back-to-top-container {
+    text-align: center;
+    margin: 20px 0;
+    /* مسافة علوية وسفلية للزر */
 }
 
-.order-summary-section .btn-secondary {
-    color: #2B2B2B;
-    /* background-color: #c8a886; */
-    border: none;
-}
-.order-summary-section .btn-secondary:hover {  
-    background-color: #d8cbc2;
-    border: none;
-}
-.order-summary-section .btn-outline-secondary {
+.back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
     border: 1px solid #ddd;
-    border-radius: 12px;
-    color: #2B2B2B;
-    font-size: 12px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-.order-summary-section .btn-outline-secondary:hover {
-    background-color: #f7f7f7;
+.back-to-top:hover {
+    background-color: #fcf0e9;
+    color: #000;
 }
-.bi-chevron-down {
-    padding-left: 8px;
-}
-.info-container {
-    background-color: rgb(255, 255, 255);
-}
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.section-header {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-#confirm-location:hover {
-    background-color: #d8cbc2;
-}
-#confirm-delivary:hover {
-    background-color: #d8cbc2;
-}
-#confirm-check:hover {
-background-color: #d8cbc2;
-}
-.payment-icons img {
-    height: 30px;
-    margin-right: 10px;
-}
+
 /* تنسيق الفوتر */
 .footer {
     background-color: #2B2B2B;
@@ -238,4 +196,3 @@ background-color: #d8cbc2;
     font-size: 12px;
     color: #aaa;
 }
-

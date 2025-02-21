@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- القائمة اليمنى -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="men.html">رجال</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="woman.html">نساء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kids.html">أطفال</a>
+                    </li>
+                </ul>
+    
+                <!-- الشعار في المنتصف -->
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+    
+                <!-- الأيقونات -->
+                <div class="d-flex icons">
+                    <a href="?lang=en" class="nav-link">
+                        <i class="bi bi-globe"></i>
+                    </a>
+                    <a href="profile.html" class="nav-link">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container my-5">
+        <div class="contact-header">
+            <h1>اتصل بنا</h1>
+            <p>هل لديك سؤال أو ملاحظة؟ فقط اكتب لنا رسالة!</p>
+        </div>
+        <div class="contact-section">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-5">
+                    <div class="contact-info custom-height">
+                        <h4>معلومات الاتصال</h4>
+                        <h6>ابدأ محادثة مباشرة!</h6>
+                        <p><i class="bi bi-telephone"></i> <span>+962 000000000</span></p>
+                        <p><i class="bi bi-envelope"></i> <span>Athwabna@gmail.com</span></p>
+                        <p><i class="bi bi-geo-alt"></i> <span>123 Alnassr Street, Abdoun, Amman, Jordan</span></p>
+                        <div class="icons-c">
+                            <a href="#" class="me-3"><i class="bi bi-facebook custom-color"></i></a>
+                            <a href="#" class="me-3"><i class="bi bi-instagram custom-color"></i></a>
+                            <a href="#" class="me-3"><i class="bi bi-twitter custom-color"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-5">
+                    <form id="feedbackForm">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" id="firstName" class="form-control" placeholder="الاسم الأول"
+                                    required>
+                            </div>
+                            <div class="col">
+                                <input type="text" id="lastName" class="form-control" placeholder="الاسم الأخير" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input  id="email" class="form-control" placeholder="البريد الالكتروني" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="phone" class="form-control" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="mb-3">
+                            <select id="subject" class="form-select" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="general">الدعم الفني</option>
+                                <option value="order">المبيعات</option>
+                                <option value="feedback">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="message" class="form-control" rows="5" placeholder="اكتب رسالتك..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-send">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Map -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.3897576302284!2d36.08261977567354!3d32.05870537397211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b65cd4d8f17e1%3A0x30e86b8a97e4ac7d!2sOrange%20Digital%20Village%20Zarqa!5e0!3m2!1sen!2sjo!4v1737142763031!5m2!1sen!2sjo"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   
+
+    <footer class="footer mt-5">
+        <div class="footer-main container">
+            <div class="row">
+                <!-- القسم الأول: معلومات الشركة -->
+                <div class="col-md-4">
+                    <img src="images/footer_logo.png" alt="شعار أثوابنا" class="footer-logo">
+                    <p>
+                        نقدم لكم أزياء شعبية تعزز ارتباطنا بثقافتنا الشعبية
+                        وتحافظ على الفلكلور والعروض الثقافية في الأردن.
+                    </p>
+                </div>
+
+                <!-- القسم الثاني: الروابط -->
+                <div class="col-md-4">
+                    <h6 class="mb-3">روابط تهمك</h6>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <!-- القسم الثالث: خدمة العملاء -->
+                <div class="col-md-4">
+                    <h6 class="mb-3">خدمة العملاء</h6>
+                    <div class="contact-options">
+                        <a href="#"><i class="bi bi-phone"></i> جوال</a>
+                        <a href="#"><i class="bi bi-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <h6>تابع أثوابنا</h6>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-snapchat"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="payments">
+                <img src="https://lh3.googleusercontent.com/KE8W2U_931n24DtWrvySEdKwnx6dLeaoaXBV6nXNHKbJd32mnIx-eaxXPdsRscJMT8vxyLy59XKVkr_UXlswXFJ2KjomzkqV-ud3=s0"
+                    alt="Google Pay">
+                <img src="https://images.seeklogo.com/logo-png/30/2/apple-pay-payment-mark-logo-png_seeklogo-306167.png"
+                    alt="Apple Pay">
+                <img src="images/Visa.png" alt="Visa">
+                <img src="images/mada.png" alt="Mada">
+            </div>
+            <p>© جميع الحقوق محفوظة | 2025 أثوابنا </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

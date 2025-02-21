@@ -40,96 +40,83 @@ body {
     color: #ddd;
     /* تغيير اللون عند التمرير */
 }
-.custom-color {
-    background-color: #CEBEB3;
+#woman a {
+    background-color: #fff;
+    color: #000;
 }
-.container-check  {
-    width: 64%;
-}
-/* .order-summary-section {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-} */
-
-.order-summary-section .form-control {
-    border-radius: 5px; /* زوايا مستديرة للحقل */
-}
-
-.order-summary-section .btn-secondary {
-    color: #2B2B2B;
-    /* background-color: #c8a886; */
-    border: none;
-}
-.order-summary-section .btn-secondary:hover {  
-    background-color: #d8cbc2;
-    border: none;
-}
-.order-summary-section .btn-outline-secondary {
+.product-card {
     border: 1px solid #ddd;
-    border-radius: 12px;
-    color: #2B2B2B;
-    font-size: 12px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+/* تنسيق المنتج */
+.product-img {
+    width: 350px;
+    height: 400px;
+    border: #333 solid 2px;
+    border-radius: 10px;
 }
 
-.order-summary-section .btn-outline-secondary:hover {
-    background-color: #f7f7f7;
+.product-card .btn {
+    width: 100%;
+    margin-top: 5px;
 }
-.bi-chevron-down {
-    padding-left: 8px;
+.btn-primary {
+    background-color: #2B2B2B;
+    /* لون الخلفية الجديد */
+    border-color: #2B2B2B;
+
 }
-.info-container {
-    background-color: rgb(255, 255, 255);
+
+.btn-primary:hover {
+    background-color: #2B2B2B;
+    /* لون الخلفية عند التمرير */
+    border-color: #2B2B2B;
+    /* لون الحدود عند التمرير */
 }
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.section-header {
-    font-size: 1.2rem;
-    font-weight: bold;
+.filter {
     margin-bottom: 20px;
 }
-#confirm-location:hover {
-    background-color: #d8cbc2;
+.related-products-section {
+    margin-top: 200px; /* يمكنك تعديل القيمة حسب الحاجة */
 }
-#confirm-delivary:hover {
-    background-color: #d8cbc2;
+.card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#confirm-check:hover {
-background-color: #d8cbc2;
+.bi-heart {
+    color: gray;
+    
 }
-.payment-icons img {
-    height: 30px;
-    margin-right: 10px;
+#relatedProductsCarousel .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
-/* تنسيق الفوتر */
-.footer {
-    background-color: #2B2B2B;
-    color: #fff;
-    font-size: 14px;
-    padding-top: 20px;
-}
-
-.footer-top a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #ddd;
-}
-
-/* القسم العلوي */
-.footer-top {
+/* تنسيق زر العودة إلى أعلى */
+.back-to-top-container {
     text-align: center;
-    padding: 10px;
-    background-color: #F8EDE8;
-    color: #333;
-    font-weight: bold;
+    margin: 20px 0; /* مسافة علوية وسفلية للزر */
 }
 
+.back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #fcf0e9;
+    color: #000;
+}
 /* تنسيق الفوتر */
 .footer {
     background-color: #2B2B2B;
@@ -238,4 +225,3 @@ background-color: #d8cbc2;
     font-size: 12px;
     color: #aaa;
 }
-

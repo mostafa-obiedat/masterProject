@@ -12,41 +12,44 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- القائمة اليمنى -->
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">رجال</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">نساء</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">أطفال</a>
-                </li>
-            </ul>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- القائمة اليمنى -->
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="men.html">رجال</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="woman.html">نساء</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kids.html">أطفال</a>
+            </li>
+        </ul>
 
-            <!-- الشعار في المنتصف -->
-            <a class="navbar-brand mx-auto" href="#">
-                <img src="images/logo.png" alt="Logo">
+        <!-- الشعار في المنتصف -->
+        <a class="navbar-brand mx-auto" href="index.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+
+        <!-- الأيقونات -->
+        <div class="d-flex icons">
+            <a href="?lang=en" class="nav-link">
+                <i class="bi bi-globe"></i>
             </a>
-
-            <!-- الأيقونات -->
-            <div class="d-flex icons">
-                <a href="#" class="nav-link">
-                    <i class="bi bi-cart"></i>
-                </a>
-                <a href="#" class="nav-link">
-                    <i class="bi bi-search"></i>
-                </a>
-                <a href="#" class="nav-link">
-                    <i class="bi bi-person"></i>
-                </a>
-            </div>
+            <a href="#" class="nav-link">
+                <i class="bi bi-person"></i>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-search"></i>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-cart"></i>
+            </a>
         </div>
-    </nav>
+    </div>
+</nav>
     <div class="container my-5">
         <div class="row">
             <div class="col-12 mt-5 mb-4">
@@ -90,7 +93,7 @@
                     <p><span>التخفيضات:</span> <span>15 دينار</span></p>
                     <hr>
                     <p><strong><span>الإجمالي:</span> <span>50 دينار</span></strong></p>
-                    <button class="btn btn-dark w-100">التوجه الى الدفع</button>
+                    <a href="checkout.html"><button class="btn btn-dark w-100">التوجه الى الدفع</button></a>
                 </div>
             </div>
         </div>
@@ -207,7 +210,7 @@
             <div class="row">
                 <!-- القسم الأول: معلومات الشركة -->
                 <div class="col-md-4">
-                    <h6>أثوابنا</h6>
+                    <img src="images/footer_logo.png" alt="شعار أثوابنا" class="footer-logo">
                     <p>
                         نقدم لكم أزياء شعبية تعزز ارتباطنا بثقافتنا الشعبية
                         وتحافظ على الفلكلور والعروض الثقافية في الأردن.
@@ -216,9 +219,10 @@
 
                 <!-- القسم الثاني: الروابط -->
                 <div class="col-md-4">
-                    <h6>روابط تهمك</h6>
+                    <h6 class="mb-3">روابط تهمك</h6>
                     <ul>
-                        <li><a href="#">من نحن</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
                         <li><a href="#">الخصوصية</a></li>
                         <li><a href="#">الشروط والأحكام</a></li>
                         <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
@@ -227,7 +231,7 @@
 
                 <!-- القسم الثالث: خدمة العملاء -->
                 <div class="col-md-4">
-                    <h6>خدمة العملاء</h6>
+                    <h6 class="mb-3">خدمة العملاء</h6>
                     <div class="contact-options">
                         <a href="#"><i class="bi bi-phone"></i> جوال</a>
                         <a href="#"><i class="bi bi-whatsapp"></i> واتساب</a>
@@ -250,10 +254,10 @@
                     alt="Google Pay">
                 <img src="https://images.seeklogo.com/logo-png/30/2/apple-pay-payment-mark-logo-png_seeklogo-306167.png"
                     alt="Apple Pay">
-                <img src="Visa.png" alt="Visa">
-                <img src="mada.png" alt="Mada">
+                <img src="images/Visa.png" alt="Visa">
+                <img src="images/mada.png" alt="Mada">
             </div>
-            <p>© جميع الحقوق محفوظة | أثوابنا 2025</p>
+            <p>© جميع الحقوق محفوظة | 2025 أثوابنا </p>
         </div>
     </footer>
 

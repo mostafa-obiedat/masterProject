@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: #FFF7F2;
     font-family: '29LT Bukra';
@@ -13,6 +14,7 @@ body {
 
 .navbar .navbar-nav .nav-link {
     color: #fff;
+    padding-left: 16px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -25,7 +27,8 @@ body {
 }
 
 .navbar .icons {
-    gap: 15px;
+    gap: 20px;
+    font-size: 17px;
 }
 
 .navbar .icons .nav-link i {
@@ -225,27 +228,33 @@ form {
     font-weight: bold;
 }
 
-/* القسم الرئيسي */
 .footer-main {
     padding: 30px 15px;
+    text-align: center; /* جعل النصوص في المنتصف */
 }
-
-.footer-main .row > div {
-    margin-bottom: 20px;
+.footer-logo {
+    width: 48px; /* تعديل الحجم حسب الحاجة */
+    display: block;
+    margin: 0 auto 10px; /* توسيط الصورة وجعلها فوق النص */
+    border-radius: 50%;
 }
-
 .footer-main h6 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: center; /* توسيط العنوان */
 }
 
 .footer-main p {
     font-size: 14px;
     line-height: 1.6;
     max-width: 300px;
+    margin: 0 auto; /* توسيط الفقرة */
+    font-weight: 100;
 }
-
+.footer-main .row>div {
+    margin-bottom: 20px;
+}
 .footer-main ul {
     list-style: none;
     padding: 0;
@@ -259,15 +268,17 @@ form {
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+    font-weight: 100;
 }
 
 .contact-options a {
     display: inline-block;
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
     color: #fff;
     text-decoration: none;
+    font-weight: 100;
 }
 
 /* القسم السفلي */
@@ -275,8 +286,10 @@ form {
     text-align: center;
     padding: 20px 15px;
     border-top: 1px solid #444;
-    margin-top: 20px; /* لإضافة مسافة بين القسم الرئيسي للفوتر والـ footer-bottom */
+    margin-top: 20px;
+    /* لإضافة مسافة بين القسم الرئيسي للفوتر والـ footer-bottom */
 }
+
 .footer-bottom .social-media a {
     font-size: 20px;
     margin: 0 10px;

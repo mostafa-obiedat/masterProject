@@ -10,6 +10,7 @@ body {
 /* تنسيق الـ Navbar */
 .navbar {
     background-color: #2B2B2B;
+    margin-bottom: 40px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -40,96 +41,112 @@ body {
     color: #ddd;
     /* تغيير اللون عند التمرير */
 }
-.custom-color {
-    background-color: #CEBEB3;
-}
-.container-check  {
-    width: 64%;
-}
-/* .order-summary-section {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-} */
 
-.order-summary-section .form-control {
-    border-radius: 5px; /* زوايا مستديرة للحقل */
+/* تخصيص الـ Header */
+header {
+    background: linear-gradient(90deg, #faeee5, #e9bca7);/* خلفية متدرجة */
+    padding: 80px 0; /* مسافة مريحة من الأعلى والأسفل */
+    text-align: center;
+    color: #fff;
+    margin: 20px auto; /* إضافة مسافة أسفل الـ Header لفصلها عن المحتوى التالي */
+    width: 80%;
 }
 
-.order-summary-section .btn-secondary {
-    color: #2B2B2B;
-    /* background-color: #c8a886; */
-    border: none;
+/* تخصيص عنوان الـ Header */
+header h1 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* إضافة تأثير ظل للنص */
 }
-.order-summary-section .btn-secondary:hover {  
-    background-color: #d8cbc2;
-    border: none;
+
+/* تخصيص النص في الـ Header */
+header .lead {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* تأثير ظل خفيف للنص */
 }
-.order-summary-section .btn-outline-secondary {
-    border: 1px solid #ddd;
+
+/* تخصيص تصميم الصورة */
+.workshop-img-wrapper {
+    position: relative;
+    overflow: hidden;
     border-radius: 12px;
-    color: #2B2B2B;
-    font-size: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.order-summary-section .btn-outline-secondary:hover {
-    background-color: #f7f7f7;
+.workshop-img-wrapper img {
+    transition: transform 0.6s ease-in-out;
 }
-.bi-chevron-down {
-    padding-left: 8px;
+
+.workshop-img-wrapper img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
-.info-container {
-    background-color: rgb(255, 255, 255);
+
+/* تخصيص تفاصيل الورشة */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
 }
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+h4 {
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 500;
 }
-.section-header {
-    font-size: 1.2rem;
-    font-weight: bold;
+
+/* قائمة التفاصيل */
+ul {
+    margin-top: 15px;
+    color: #666;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+ul li strong {
+    color: #333;
+}
+
+/* تخصيص الأزرار */
+.btn-primary {
+    background-color: rgb(3, 100, 3);
+    border-color: rgb(3, 100, 3);
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: rgb(3, 86, 3);
+    border-color: rgb(3, 86, 3);
+    transform: translateY(-2px);
+}
+
+/* تخصيص المسافات بين العناصر */
+.mt-4 {
+    margin-top: 30px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* تخصيص المسافات بين النصوص والعناصر في الصفحة */
+.lead {
     margin-bottom: 20px;
 }
-#confirm-location:hover {
-    background-color: #d8cbc2;
-}
-#confirm-delivary:hover {
-    background-color: #d8cbc2;
-}
-#confirm-check:hover {
-background-color: #d8cbc2;
-}
-.payment-icons img {
-    height: 30px;
-    margin-right: 10px;
-}
-/* تنسيق الفوتر */
-.footer {
-    background-color: #2B2B2B;
-    color: #fff;
-    font-size: 14px;
-    padding-top: 20px;
-}
-
-.footer-top a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #ddd;
-}
-
-/* القسم العلوي */
-.footer-top {
-    text-align: center;
-    padding: 10px;
-    background-color: #F8EDE8;
-    color: #333;
-    font-weight: bold;
-}
-
 /* تنسيق الفوتر */
 .footer {
     background-color: #2B2B2B;
@@ -238,4 +255,3 @@ background-color: #d8cbc2;
     font-size: 12px;
     color: #aaa;
 }
-

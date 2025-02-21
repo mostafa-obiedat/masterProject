@@ -1,0 +1,694 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF7F2;
+    font-family: '29LT Bukra';
+}
+
+/* تنسيق الـ Navbar */
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 16px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar .navbar-b img {
+    width: 50px;
+    position: relative;
+    left: 960%;
+}
+
+.navbar .icons {
+    gap: 20px;
+    font-size: 17px;
+}
+
+.navbar .icons .nav-link i {
+    color: #fff;
+    /* تغيير لون الأيقونات إلى الأبيض */
+}
+
+.navbar .icons .nav-link i:hover {
+    color: #ddd;
+    /* تغيير اللون عند التمرير */
+}
+/* يجعل الـ Navbar فوق صورة الهيرو */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.4s ease-in-out;
+    box-shadow: none;
+    /* animation: fadeInDown 2.2s ease-out; */
+}
+/* عند التمرير للأسفل، يتحول إلى تصميم الـ Navbar العادي */
+.navbar.scrolled {
+    position: fixed;
+   background-color: #2B2B2B;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* عند التمرير، تظهر القائمة */
+.navbar.scrolled .nav-links {
+    display: flex;
+}
+
+.hero {
+    height: 600px;
+    /* عرض كامل الصفحة */
+    background-image: url('images/636493786635882849.png');
+    /* رابط الخلفية */
+    background-size: cover;
+    /* تغطية كاملة للخلفية */
+    /* background-position: center; */
+    /* ضبط موضع الخلفية */
+    background-repeat: no-repeat;
+    /* منع تكرار الخلفية */
+    color: white;
+    /* لون النص */
+    padding: 60px 0;
+    /* مسافة علوية وسفلية */
+}
+.container-hero h1{
+    animation: fadeInDown 1.2s ease-out;
+}
+/* تنسيق زر "تسوق الآن" */
+.cta-button-hero {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #800f0f;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-out;
+}
+
+.cta-button-hero:hover {
+    background: #6d0e0e; /* لون أغمق عند التمرير */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+html {
+    scroll-behavior: smooth;
+}
+.carousel-margin {
+    margin-top: 10px;
+}
+/* تخصيص عرض الصورة داخل الكاروسيل */
+#workshopCarousel .carousel-inner img {
+    width: 60%;
+    /* تقليل العرض ليكون في المنتصف */
+    max-height: 250px;
+    /* ضبط الارتفاع */
+    object-fit: cover;
+    /* الحفاظ على تناسب الصورة */
+}
+
+/* تنسيق الكارد لجعلها أكثر جمالية */
+.card {
+    max-width: 1000px;
+    /* تحديد عرض البطاقة */
+    margin: auto;
+    /* توسيط البطاقة */
+}
+
+/* تصميم النصوص فوق الصورة */
+.caption-above {
+    text-align: center;
+    z-index: 10;
+    color: #2B2B2B;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.caption-above h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.caption-above p {
+    font-size: 1.2rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+/* تأثيرات الحركات */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تصميم الزر أسفل الصورة */
+.button-below {
+    margin-top: 4px;
+}
+
+.button-below a {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #AA1313;
+    color: white;
+    border: none;
+    text-decoration: none;
+    animation: fadeInUp 1.5s ease-out;
+    transition: background-color 0.4s ease-in-out, transform 0.4s linear;
+}
+
+.button-below a:hover {
+    background-color: #800f0f;
+    transform: scale(1.1);
+}
+  /* تغيير لون السهم الأيسر */
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232B2B2B' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+/* تغيير لون السهم الأيمن */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232B2B2B' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z'/%3E%3C/svg%3E");
+}
+
+/* التحكم بحجم الأسهم (اختياري) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+.container-background {
+    background: linear-gradient(90deg, #faeee5, #f6ddd1);
+}
+/* تصميم جديد لـ section-title */
+.section-title-wrapper {
+    display: flex;
+    justify-content: center;
+    /* توسيط أفقي */
+    align-items: center;
+    /* توسيط عمودي */
+    margin: 30px 0;
+    margin-top: 10%;
+    /* مسافة علوية وسفلية */
+}
+
+.section-title {
+    margin: 30px 0;
+    font-size: 28px;
+    /* حجم النص كبير */
+    font-weight: bold;
+    /* النص عريض */
+    color: #2B2B2B;
+    /* لون النص أبيض */
+    text-align: center;
+    /* توسيط النص */
+    background: linear-gradient(90deg, #faeee5, #f6ddd1);
+    /* خلفية متدرجة */
+    padding: 20px 40px;
+    /* مسافة داخلية كبيرة */
+    border-radius: 20px;
+    /* زوايا دائرية */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* ظل لطيف */
+    /* letter-spacing: 2px; */
+    /* تباعد بين الأحرف */
+    width: 60%;
+    /* تجعل العنوان بحجم النص فقط */
+    animation: bounceIn 1.5s ease;
+    /* تأثير دخول */
+    /* line-height: 50px; */
+}
+/* تنسيق الوصف داخل نفس الخلفية */
+.section-description {
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-top: 30px; /* مسافة صغيرة أسفل العنوان */
+    font-weight: normal;
+}
+
+/* تأثير دخول جذاب */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9) translateY(-20px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.category-card {
+    position: relative;
+    /* لجعل النص يظهر فوق الصورة */
+    overflow: hidden;
+    /* لمنع خروج أي عنصر خارج البطاقة */
+    border-radius: 10px;
+    /* حواف مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* تأثير عند التمرير */
+    width: 80%;
+    height: 80%;
+}
+
+.category-card img {
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+    /* نفس الحواف للصور */
+    display: block;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    /* تكبير البطاقة عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* تكثيف الظل */
+    cursor: pointer;
+}
+
+.category-card h5 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(240, 221, 207, 0.6);
+    ;
+    /* خلفية شفافة للنص */
+    color: #000000;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* تقسيم الشبكة إلى عمودين */
+    gap: 10px;
+    /* المسافة بين العناصر */
+    align-items: center;
+    /* محاذاة المحتوى عموديًا */
+}
+
+/* تنسيق النصوص */
+.men-text-container,
+.women-text-container,
+.kids-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.men-text,
+.women-text,
+.kids-text {
+    font-size: 16px;
+    color: #333;
+    background-color: #F0DDCF;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+/* توزيع النصوص مع البطاقات */
+.men-text-container {
+    grid-column: 1 / 2;
+    /* النص على يسار الرجال */
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+.women-text-container {
+    grid-column: 2 / 3;
+    /* النص على يمين النساء */
+    grid-row: 2 / 3;
+    text-align: right;
+}
+
+.kids-text-container {
+    grid-column: 1 / 2;
+    /* النص على يسار الأطفال */
+    grid-row: 3 / 4;
+    text-align: left;
+}
+/* تصميم البطاقة الخاصة بالنص والزر */
+.text-card {
+    background: linear-gradient(90deg, #faeee5, #f6ddd1);
+    /* تدرج لوني ناعم */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 95%;
+    /* زيادة الحجم */
+    margin-left: 14%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير تكبير البطاقة عند التمرير */
+.text-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* تنسيق النص */
+.text-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+
+/* تنسيق زر Call to Action */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AA1313;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #800f0f;
+}
+
+.custom-width {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.features-section {
+    max-width: 84%;
+    margin: 60px;
+    background: linear-gradient(90deg, #faeee5, #f6ddd1);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 14px;
+    /* box-shadow: 2px 0 4px rgba(0, 0, 0, 0.3); */
+}
+
+.features-section h1 {
+    color: #AA1313;
+    margin-bottom: 30px;
+}
+
+.features-section .feature {
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #AA1313;
+    border-radius: 24px;
+    padding: 10px;
+}
+
+.features-section .feature img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+}
+.features-section .features {
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+    text-align: center;
+    border: 4px solid #AA1313;
+    border-radius: 24px;
+    padding: 10px;
+}
+.features-section .features img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+}
+.feature  p {
+    margin: 0;
+    color: #fff;
+}
+.features  p {
+    margin: 0;
+    color: #AA1313;
+}
+
+.linee {
+    margin-top: 30px;
+    margin-right: 50px;
+    max-width: 92%;
+    height: 40px;
+}
+.testimonial-section {
+    padding: 50px 0;
+}
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.stars {
+    color: #FFC107;
+}
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(30%);
+}
+/* تنسيق زر العودة إلى أعلى */
+.back-to-top-container {
+    text-align: center;
+    margin: 20px 0;
+    /* مسافة علوية وسفلية للزر */
+}
+
+.back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #fcf0e9;
+    color: #000;
+}
+
+/* تنسيق الفوتر */
+.footer {
+    background-color: #2B2B2B;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer-top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
+/* القسم العلوي */
+.footer-top {
+    text-align: center;
+    padding: 10px;
+    background-color: #F8EDE8;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-main {
+    padding: 30px 15px;
+    text-align: center; /* جعل النصوص في المنتصف */
+}
+.footer-logo {
+    width: 48px; /* تعديل الحجم حسب الحاجة */
+    display: block;
+    margin: 0 auto 10px; /* توسيط الصورة وجعلها فوق النص */
+    border-radius: 50%;
+}
+.footer-main h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* توسيط العنوان */
+}
+
+.footer-main p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0 auto; /* توسيط الفقرة */
+    font-weight: 100;
+}
+.footer-main .row>div {
+    margin-bottom: 20px;
+}
+.footer-main ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-main ul li {
+    margin-bottom: 10px;
+}
+
+.footer-main ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.contact-options a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+/* القسم السفلي */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 15px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    /* لإضافة مسافة بين القسم الرئيسي للفوتر والـ footer-bottom */
+}
+
+.footer-bottom .social-media a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer-bottom .social-media a:hover {
+    color: #ddd;
+}
+
+.footer-bottom .payments img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* تحسين حجم الصورة داخل الكاروسيل */
+.carousel-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق العناوين */
+.animated-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 5px;
+}
+
+.animated-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* نقاط التنقل */
+.carousel-indicators button {
+    background-color: #E8C9B9;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #C89B7B;
+}
+
+
+
+/* تصميم الكاروسيل */
+.custom-carousel-wrapper {
+    background: linear-gradient(135deg, #fce5d3, #e3dad2); /* خلفية متدرجة */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* لضبط الزخارف */
+}
+.custom-carousel-wrapper {
+    background-color: #e0e0e0;
+}
+
+
